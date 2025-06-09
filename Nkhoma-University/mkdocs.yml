@@ -1,0 +1,82 @@
+site_name: Nkhoma University Help Page
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+
+  palette: 
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - navigation.indexes
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+
+plugins:
+  - search:
+
+nav:
+  - Home:
+      - Home: index.md
+  - Administrators:
+      - Activate Students: administrators/activate-students.md
+      - Activate Gradebook: administrators/activate-gradebook.md
+      - Create New Courses: administrators/create-new-courses.md
+      - Assign Roles and Cohorts: administrators/assign-roles-and-cohorts.md
+      - Manage Users with Bulk Tools: administrators/create-user-account-bulk-upload.md
+      - System Monitoring: administrators/system-monitoring.md
+      - Reporting and Compliance: administrators/reporting-and-compliance.md
+  - Teachers:
+      - Create Course Material: teachers/create-course-material.md
+      - Distribute Course Material: teachers/distribute-course-material.md
+      - Grade Assignments: teachers/grade-assignments.md
+      - Student Engagement: teachers/student-engagement-and-assessment.md
+      - Reporting and Analytics: teachers/reporting-and-analytics.md
+      - Course Content Management: teachers/content-management.md
+  - Students: 
+      - Sign In: students/sign-in.md
+      - See Grades: students/see-grades.md
+      - See Course Material: students/see-course-material.md
+      - Assessment and Feedback: students/assessment-and-feedback.md
+      - Course Enrollment: students/course-enrollment.md
+      - Login & Onboarding: students/login-and-onboarding.md
+      - Learning and Participation: students/learning-and-participation.md
+      - Certification and Progress: students/certification-and-progress-tracking.md
+
+extra:
+  favicon: img/favicon.ico
+  generator: false
